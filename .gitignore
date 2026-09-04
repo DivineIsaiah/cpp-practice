@@ -1,0 +1,10 @@
+# C++ compiled executables
+*.exe
+
+# VS Code configuration
+.vscode/
+
+# C/C++ build artifacts
+*.o
+*.obj
+*.out
