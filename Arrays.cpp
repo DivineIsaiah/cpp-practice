@@ -115,7 +115,6 @@ int main()
         }
     }
 
-
     // Print sorted array
     cout << "Sorted: ";
 
@@ -151,6 +150,32 @@ int main()
     }
 
     cout << '\n';
+
+
+    int floip[]{6523, 634, -73, 84, 92, 95, 26, 237, -124, 63, 114};
+    int sz = 11;
+
+    for (int r = 0; r < sz - 1; r++)
+    {
+        for (int w = 0; w < sz - r -1; w++)
+        {
+            if (floip[w] < floip[w + 1])
+            {
+                int temp = floip[w];
+                floip[w] = floip[w + 1];
+                floip[w + 1] = temp;
+            }
+        }
+
+    }
+
+    cout << "The floip array has now been sorted in decending order to: " ;    
+    for (int b = 0; b < sz; b++)
+    {
+        cout << floip[b] << " ";
+    }
+
+    cout << "\n";
     
 
     // Searching an array
