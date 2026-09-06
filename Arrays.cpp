@@ -126,6 +126,46 @@ int main()
 
     cout << "\n";
 
+    int guan[]{699, 57, 97, 783, 98, 568, 73, -32, 0, -91};
+    int qnt = 10;
+
+    for (int i = 0; i < qnt - 1; i++)
+    {
+        for (int j = 0; j < qnt - i - 1; j++)
+        {
+            if (guan[j] > guan[j + 1])
+            {
+                int temp = guan[j];
+                guan[j] = guan[j + 1];
+                guan[j + 1] = temp;
+            }
+        }
+        
+    }
+
+    cout << "The guan array is now sorted to: ";
+    
+    for (int p = 0; p < qnt; p++)
+    {
+        cout << guan[p] << " ";
+    }
+
+    cout << '\n';
+    
+
+    // Searching an array
+    int target = 73;
+
+    for (int l = 0; l < 10; l++)
+    {
+        if (guan[l] == target)
+        {
+            cout << "Found " << target << " at index " << l << '\n';
+        }
+        
+        
+    }
+    
 
     return 0;
 }
