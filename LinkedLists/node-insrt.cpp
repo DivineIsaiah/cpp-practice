@@ -18,7 +18,7 @@ Node* createNode (int value)
     return newNode; 
 }
 
-// now to add infrontog the list
+// now to add in-back of the list
 void insertEnd (Node*& head, int value)
 {
     Node* newNode = createNode (value);
@@ -41,6 +41,7 @@ void insertEnd (Node*& head, int value)
 
 }
 
+// now to add in-front of the list
 void insertStart(Node*& head, int value)
 {
     Node* newNode = createNode(value);
@@ -68,7 +69,7 @@ void traverse (Node* head)
 }
 
 
-// the main function where we call the prev functions we write to work
+// the main function where we call the prev functions to work
 int main()
 {
     Node* head = nullptr;
@@ -80,7 +81,7 @@ int main()
     insertEnd(head, 49);
     insertEnd(head, 50);
 
-    cout << "The list after insetion at end:";
+    cout << "The list after insertion at end: ";
 
     traverse(head);
 
