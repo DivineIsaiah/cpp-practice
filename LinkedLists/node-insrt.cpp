@@ -52,7 +52,6 @@ void insertStart(Node*& head, int value)
     }
 
     newNode->next = head;
-
     head = newNode;
 }
 
