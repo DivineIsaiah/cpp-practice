@@ -9,7 +9,7 @@ int main()
     int size;
  
     int sum = 0;
-    int average = 0;
+    double average = 0;
     int largest = 0;
     int smallest = 0;
     int count = 0;
@@ -41,7 +41,7 @@ int main()
         count++;
     }
 
-    average = sum / count;
+    average = (double)sum / (double)count;
 
     cout << "\nYou have " << count << " elements in your array.\n";
     cout << "\n";
@@ -67,6 +67,7 @@ int main()
 
     cout << "The largest element in your array is: " << largest << "\n";
     cout << "\nThe smallest element in your array is: " << smallest << "\n";
-    cout << "\nWell that's all for now, " << name << "! Thank you for using this program.\n";
+    cout << "\nWell that's all for now, " << name << "! Thank you for using this program." << endl;
 
+    return 0;
 }
