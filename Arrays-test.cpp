@@ -17,23 +17,24 @@ int main()
 
     cout << "Enter your name: ";
     getline(cin, name);
-    cout << "Welcome " << name << "!Enter the size of the array: ";
+    cout << "\nWelcome " << name << "! Enter the size of the array: ";
     cin >> size;
+    cout << "\n";
     int nums[size];
 
     for(int i = 0; i < size; i++)
     {
-        cout << "Enter " << i + 1 << " Elements: ";
+        cout << "Enter number " << i + 1 << " elements: ";
         cin >> nums[i];
     }
 
-    cout << "Your full array is: ";
+    cout << "\nYour full array is: ";
     for(int j = 0; j < size; j++)
     {
         cout << nums[j] << " ";
     }
 
-
+    cout << "\n";
     for( int k = 0; k < size; k++)
     {
         sum += nums[k];
@@ -43,8 +44,11 @@ int main()
     average = sum / count;
 
     cout << "\nYou have " << count << " elements in your array.\n";
-    cout << "The sum of the array is: " << sum << "\n";
-    cout << "The average of the array is: " << average << "\n";
+    cout << "\n";
+    cout << "The sum of your array is: " << sum << "\n";
+    cout << "\n";
+    cout << "The average of your array is: " << average << "\n";
+    cout << "\n";
 
     largest = nums[0];
     smallest = nums[0];
@@ -61,8 +65,8 @@ int main()
         }
     }
 
-    cout << "The largest element in the array is: " << largest << "\n";
-    cout << "The smallest element in the array is: " << smallest << "\n";
-    cout << "That's all for now, " << name << "! Thank you for using this program.\n";
+    cout << "The largest element in your array is: " << largest << "\n";
+    cout << "\nThe smallest element in your array is: " << smallest << "\n";
+    cout << "\nWell that's all for now, " << name << "! Thank you for using this program.\n";
 
 }
