@@ -41,6 +41,4 @@ int main()
     PrintStack(nums);
     cout << nums.size() << endl;
 
-
-
 }
