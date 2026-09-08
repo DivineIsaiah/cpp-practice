@@ -28,6 +28,8 @@ int main()
     nums.push(30);
     nums.push(40);
     nums.push(50);
+    nums.push(60);
+    nums.push(70);
 
     cout << "The full stack: ";
     PrintStack(nums);
